@@ -47,7 +47,7 @@ public class BuildPaths
         var nuGetPackagesOutputDirectory = packagesDirectory + "/NuGet";
         var chocolateyPackagesOutputDirectory = packagesDirectory + "/Chocolatey";
 
-        var dependencyCheckReportsDirectory = buildDirectoryPath + "/DependencyCheckReports";
+        var dependencyCheckReportsDirectory = BuildParameters.RootDirectoryPath + "/code_drop/DependencyCheckReports";
 
         // Files
         var dotNetFormatOutputFilePath = ((DirectoryPath)testResultsDirectory).CombineWithFilePath("dotnet-format.json");
